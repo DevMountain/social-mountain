@@ -504,7 +504,7 @@ updatePost() {
       <Edit text={ text }
             id={ id } // Remember to destructure id off of props or use this.props.id
             hideEdit={ this.hideEdit }
-            updatePostFn={ updatePostFn } />
+            updatePostFn={ updatePostFn } // This should also be destructured from props or you'll need to reference this.props.updatePostFn />
     :
       <span className="Post__text">{ text }</span>
   }
